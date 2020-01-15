@@ -1,0 +1,42 @@
+<app-header [settings]="appData"></app-header>
+
+
+<div class="tblclas">
+  <h2>Environment Configuration </h2>
+  <table *ngIf="appData" class="table table-striped">
+    <thead [ngStyle]="{background: appData.backgroundColor, color: 'white'}">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">key</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">1</td>
+        <td>Name</td>
+        <td>{{appData.name}}</td>
+      </tr>
+      <tr>
+        <td scope="row">2</td>
+        <td>Version</td>
+        <td>{{appData.version}}</td>
+      </tr>
+      <tr>
+        <td scope="row">3</td>
+        <td>Environment</td>
+        <td>{{appData.environment}}</td>
+      </tr>
+      <tr>
+        <td scope="row">4</td>
+        <td>Base Href</td>
+        <td>{{appData.basehref}}</td>
+      </tr>
+      <tr>
+        <td scope="row">5</td>
+        <td>Background Color</td>
+        <td>{{appData.backgroundColor}}</td>
+      </tr>
+    </tbody>
+  </table>
+

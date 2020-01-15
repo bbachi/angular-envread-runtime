@@ -1,0 +1,8 @@
+
+{
+    "name": "envapp",
+    "version": "1.0.0",
+    "environment": "development",
+    "basehref": "envapp",
+    "backgroundColor": "black"
+}
